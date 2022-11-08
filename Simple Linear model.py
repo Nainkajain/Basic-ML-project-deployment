@@ -29,7 +29,7 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 
 #Fitting model with trainig data
-regressor.fit(X, y)
+regressor.fit(X.values, y)
 
 # Saving model to disk
 pickle.dump(regressor, open('model.pkl','wb'))
